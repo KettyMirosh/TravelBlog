@@ -166,3 +166,10 @@ body::-webkit-scrollbar-track {
         width: auto;
     }
 }
+
+@media (max-width: 320px) {
+    .contact .contact_content .contact_form {
+        padding: 0 20px;
+        right: 20px;
+    }
+}
