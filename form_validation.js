@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
     const nameInput = form.querySelector('input[name="name"]');
     const emailInput = form.querySelector('input[name="mail"]');
     const telInput = form.querySelector('input[name="tel"]');
-    const errorElement = form.querySelector('.error'); // Исправлено обращение к элементу ошибки
+    const errorElement = form.querySelector('.error');
 
     function showError(message) {
         errorElement.textContent = message;
