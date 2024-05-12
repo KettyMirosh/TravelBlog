@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/form_validation.css" />
+    <link rel="stylesheet" href="assets/sass/form_validation.sass" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Блог о путешествиях</title>
+  </head>
+  <body>
+    <h1 class="h1">Блог о путешествиях</h1>
+    <section class="contact">
+      <div class="contact_content">
+        <div class="contact_form">
+          <div class="title">
+            <span class="main">Остались вопросы? </span>
+            <span class="other">Оставь заявку и мы ответим</span>
+          </div>
+          <form action="" method="post">
+            <input type="text" name="name" placeholder="Имя" />
+            <input id="tel" type="tel" name="tel" placeholder="Телефон" />
+            <input id="mail" type="mail" name="mail" placeholder="Почта" />
+            <div class="error"></div>
+            <!-- Добавляем элемент для отображения ошибок -->
+          </form>
+          <div class="btn"><button>Оставить заявку</button></div>
+        </div>
+      </div>
+    </section>
+    <script src="form_validation.js"></script>
+  </body>
+</html>
