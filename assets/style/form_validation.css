@@ -1,7 +1,4 @@
-element.style {
-    overflow: visible;
-}
-
+/* Стили для body и html */
 body, html {
     margin: 0;
     padding: 0;
@@ -9,12 +6,15 @@ body, html {
     position: relative;
 }
 
+/* Общие стили для элементов с классами .comment и .contact */
 .comment, .contact {
     width: auto;
     height: auto;
 }
 
+/* Стили для контента формы связи */
 .contact .contact_content {
+/* Установка фонового изображения и его настройки */
 background-image: url(../img/contact_bg.png);
 background-position: center;
 background-repeat: no-repeat;
@@ -24,45 +24,40 @@ height: 640px;
 padding: 0 80px;
 }
 
+/* Стили для формы связи */
 .contact .contact_content .contact_form {
+    /* Установка максимальной ширины, позиционирование и стилизация формы */
     max-width: 560px;
     position: absolute;
     right: 160px;
     padding: 0 95px;
     backdrop-filter: blur(20px);
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.contact .contact_content .contact_form .title {
-    margin-bottom: 45px;
-}
 
-.contact .contact_content .contact_form .title, .contact .contact_content .contact_form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
+/* Стили для заголовка формы и формы в целом */
+.contact .contact_content .contact_form .title {
+    /* Отступ снизу заголовка */
+    margin-bottom: 45px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: #ffc700;
-    border-radius: 20px;
-    border: 3px solid #fff;
+/* Стили для заголовка формы и формы в целом */
+.contact .contact_content .contact_form .title, .contact .contact_content .contact_form form {
+    /* Определяем стили для контейнера заголовка и формы */
+    display: flex; /* Определяем стили для контейнера заголовка и формы */
+    flex-direction: column; /* Определяем направление колонок (вертикальное) */
+    justify-content: center; /* Выравнивание по центру по вертикали */
 }
 
-body::-webkit-scrollbar-track {
-    background: #fff;
-}
-
-.contact .contact_content .contact_form .title {
-    margin-bottom: 45px;
-}
-
+/* Стили для основного текста в заголовке */
 .contact .contact_content .contact_form .title .main {
+    /* Стили для основного текста */
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
@@ -71,7 +66,9 @@ body::-webkit-scrollbar-track {
     color: #fff;
 }
 
+/* Стили для дополнительного текста в заголовке */
 .contact .contact_content .contact_form .title .other {
+    /* Стили для дополнительного текста */
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
@@ -81,17 +78,22 @@ body::-webkit-scrollbar-track {
     background: 0 0;
 }
 
+/* Стили для элементов .calendar, .description, .other */
 .calendar, .description, .other {
+    /* Общие стили для указанных элементов */
     width: auto;
     height: auto;
-    background-color: #fff;
+    background-color: #fff; /* Фоновый цвет белый */
 }
 
+/* Стили для формы ввода */
 .contact .contact_content .contact_form form {
     width: 360px;
 }
 
+/* Стили для поля ввода */
     .contact .contact_content .contact_form form input {
+        /* Стили для общих полей ввода */
         background: 0 0;
         border: 0;
         border-bottom: 1px solid #fff;
@@ -103,10 +105,13 @@ body::-webkit-scrollbar-track {
         color: #fff;
     }
 
+    /* Стили для полей ввода с id mail и tel внутри формы */
     .contact .contact_content .contact_form form #mail, .contact .contact_content .contact_form form #tel {
+        /* Отступ сверху для полей с id mail и tel */
         margin-top: 45px;
     }
     
+    /* Стили для поля ввода */
     .contact .contact_content .contact_form form input {
         background: 0 0;
         border: 0;
@@ -119,26 +124,14 @@ body::-webkit-scrollbar-track {
         color: #fff;
     }
 
-    .contact .contact_content .contact_form form #mail, .contact .contact_content .contact_form form #tel {
-        margin-top: 45px;
-    }
-    .contact .contact_content .contact_form form input {
-        background: 0 0;
-        border: 0;
-        border-bottom: 1px solid #fff;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        color: #fff;
-    }
-
+    /* Стили для кнопки отправки формы */
     .contact .contact_content .contact_form .btn {
+        /* Отступ сверху кнопки */
         margin-top: 60px;
     }
 
     .contact .contact_content .contact_form .btn button {
+        /* Отступ сверху кнопки */
         padding: 15px 62px;
         background: linear-gradient(92.71deg, #0499dd 0, #17c1bc 100%);
         border-radius: 60px;
@@ -153,22 +146,51 @@ body::-webkit-scrollbar-track {
         transition: .5s ease all;
     }
 
-@media (max-width: 878px) {
-    .contact .contact_content .contact_form {
-        padding: 0 40px;
-        right: 80px;
+    /* Медиа-запросы */
+    @media (max-width: 20em) { /*(max-width: 320px)*/
+        /* Медиа-запрос для экранов до 320px */
+        .contact .contact_content .contact_form {
+            padding: 0 0.5em;
+            right: 0.5em;
+        }
+    
+        .contact .contact_content .contact_form form {
+            width: auto;
+        }
+    
+        .contact .contact_content .contact_form .btn button {
+            padding: 0.9375em 2.5em;
+        }
     }
-}
-
-@media (max-width: 650px) {
-    .contact .contact_content .contact_form form {
-        width: auto;
+    
+    @media (min-width: 20.0625em) and (max-width: 48em) { /*(min-width: 321px) and (max-width: 768px)*/
+        /* Медиа-запрос для экранов от 321px до 768px */
+        .contact .contact_content .contact_form {
+            padding: 0 1.25em;
+            right: 2em;
+        }
+    
+        .contact .contact_content .contact_form form {
+            width: auto;
+        }
+    
+        .contact .contact_content .contact_form .btn button {
+            padding: 0.9375em 3.125em;
+        }
     }
-}
-
-@media (max-width: 320px) {
-    .contact .contact_content .contact_form {
-        padding: 0 20px;
-        right: 20px;
+    
+    @media (min-width: 48.0625em) and (max-width: 64em) { /*(min-width: 769px) and (max-width: 1024px)*/
+         /* Медиа-запрос для экранов от 769px до 1024px */
+        .contact .contact_content .contact_form {
+            padding: 0 2.5em;
+            right: 4em;
+        }
+    
+        .contact .contact_content .contact_form form {
+            width: auto;
+        }
+    
+        .contact .contact_content .contact_form .btn button {
+            padding: 0.9375em 3.75em;
+        }
     }
-}
