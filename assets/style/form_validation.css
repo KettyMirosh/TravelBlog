@@ -150,7 +150,6 @@ body::-webkit-scrollbar-track {
         line-height: 17px;
         color: #fff;
         cursor: pointer;
-        -webkit-transition: .5s ease all;
         transition: .5s ease all;
     }
 
