@@ -10,9 +10,9 @@ window.addEventListener('load', function() {
     console.log('Выбрана форма:', form);
 
     // Выбрать поля ввода имени, email и телефона по их именам
-    const nameInput = form.querySelector('input[name="name"]');
-    const emailInput = form.querySelector('input[name="mail"]');
-    const telInput = form.querySelector('input[name="tel"]');
+    const nameInput = form.querySelector('#name');
+    const emailInput = form.querySelector('#mail');
+    const telInput = form.querySelector('#tel');
     // Выбрать элемент для отображения ошибок валидации
     const errorElement = form.querySelector('.error');
 
@@ -30,6 +30,7 @@ window.addEventListener('load', function() {
 
     // Функция для валидации формы
     function validateForm() {
+        
         let isValid = true; // Флаг для отслеживания валидности формы
 
         // Проверка имени
@@ -76,6 +77,8 @@ window.addEventListener('load', function() {
     // Обработчик события отправки формы
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Предотвратить отправку формы по умолчанию
+
+        console.log('Обработчик события submit добавлен к форме:', form); // Отладочный вывод
 
         console.log('Форма отправлена'); // Вывести сообщение в консоль для отладки
 
