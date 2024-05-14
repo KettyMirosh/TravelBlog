@@ -1,4 +1,4 @@
-//ЕЗ ОТПРАВКИ НА СЕРВЕР способ обработки данных формы только на клиентской стороне.
+/*//ЕЗ ОТПРАВКИ НА СЕРВЕР способ обработки данных формы только на клиентской стороне.
 // Дождаться полной загрузки страницы
 window.addEventListener('load', function() {
     // Вывести сообщение в консоль о завершении загрузки страницы
@@ -93,5 +93,66 @@ window.addEventListener('load', function() {
         } else { // Если форма не прошла валидацию
             console.log('Форма не прошла валидацию'); // Вывести сообщение в консоль для отладки
         }
+    });
+});*/
+
+// Дожидаемся загрузки всего содержимого страницы
+document.addEventListener('DOMContentLoaded', function () {
+    // Получаем ссылки на элементы формы и элемент для отображения ошибок
+    const form = document.querySelector('form'); // Форма
+    const nameInput = document.getElementById('name'); // Поле ввода имени
+    const telInput = document.getElementById('tel'); // Поле ввода телефона
+    const mailInput = document.getElementById('mail'); // Поле ввода почты
+    const errorDiv = document.querySelector('.error'); // Элемент для отображения ошибок
+
+    // Добавляем обработчик события отправки формы
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+        // Очищаем сообщения об ошибках перед проверкой
+        errorDiv.textContent = '';
+
+        // Проверка заполнения всех полей формы
+        if (nameInput.value.trim() === '' || telInput.value.trim() === '' || mailInput.value.trim() === '') {
+            errorDiv.textContent = 'Заполните все поля формы!';
+            return; // Прерываем выполнение функции, если поля не заполнены
+        }
+
+        // Проверка правильности заполнения имени (с большой буквы)
+        if (!/^[А-ЯЁ][а-яё]*$/.test(nameInput.value.trim())) {
+            errorDiv.textContent = 'Имя должно начинаться с большой буквы и содержать только буквы русского алфавита!';
+            return; // Прерываем выполнение функции, если имя введено неправильно
+        }
+
+        // Проверка правильности заполнения телефона
+        if (!/^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/.test(telInput.value.trim())) {
+            errorDiv.textContent = 'Введите корректный номер телефона!';
+            return; // Прерываем выполнение функции, если телефон введен неправильно
+        }
+
+        // Проверка правильности заполнения почты
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mailInput.value.trim())) {
+            errorDiv.textContent = 'Введите корректный адрес электронной почты!';
+            return; // Прерываем выполнение функции, если почта введена неправильно
+        }
+
+        // Если все проверки пройдены успешно, можно отправить форму
+        // form.submit(); // Раскомментировать эту строку, чтобы отправить форму на сервер
+
+        // Добавление сообщения об успешной отправке
+        errorDiv.textContent = 'Форма успешно отправлена!';
+    });
+
+    // Добавление подсказки для правильного заполнения формы
+    const exampleText = 'Пример: Иванов Иван, +7(XXX)XXX-XX-XX, example@mail.com';
+    [nameInput, telInput, mailInput].forEach(input => {
+        // При фокусировке на поле отображаем подсказку
+        input.addEventListener('focus', function () {
+            errorDiv.textContent = exampleText;
+        });
+        // При потере фокуса убираем подсказку
+        input.addEventListener('blur', function () {
+            errorDiv.textContent = '';
+        });
     });
 });
