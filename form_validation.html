@@ -31,11 +31,32 @@
           <!-- Форма для ввода данных -->
           <form action="" method="post">
             <!-- Поля ввода для имени, телефона и почты -->
-            <input id="name" type="text" name="name" placeholder="Имя" />
-            <input id="tel" type="tel" name="tel" placeholder="Телефон" />
-            <input id="mail" type="email" name="mail" placeholder="Почта" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+            <input
+              id="tel"
+              type="tel"
+              name="tel"
+              placeholder="Телефон"
+              required
+            />
+
+            <input
+              id="mail"
+              type="email"
+              name="mail"
+              placeholder="Почта"
+              required
+            />
             <!-- Элемент для отображения ошибок -->
-            <div class="error"></div>
+            <!--<div class="error"></div>-->
+            <!-- Элемент для отображения ошибок, связанный с заголовком формы -->
+            <div class="error" aria-labelledby="formTitle"></div>
           </form>
           <!-- Кнопка отправки формы -->
           <div class="btn"><button>Оставить заявку</button></div>
@@ -43,6 +64,6 @@
       </div>
     </section>
     <!-- Подключение JavaScript файла -->
-    <script src="form_validation.js"></script>
+    <script src="./form_validation.js"></script>
   </body>
 </html>
