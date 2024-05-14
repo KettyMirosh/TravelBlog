@@ -146,6 +146,31 @@ padding: 0 80px;
         transition: .5s ease all;
     }
 
+/* Стили для элемента .error */
+.error {
+    /* Определение общих стилей для элемента .error */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff; /* Цвет текста белый */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+/* Стили для подсказки об успешной отправке */
+.success {
+    /* Определение общих стилей для элемента .success */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff; /* Цвет текста белый */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+
     /* Медиа-запросы */
     @media (max-width: 20em) { /*(max-width: 320px)*/
         /* Медиа-запрос для экранов до 320px */
