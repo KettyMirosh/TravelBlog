@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Блог о путешествиях</title>
+  <link rel="stylesheet" href="./styles/style.css" type="text/css">
 </head>
 <body>
-  <h1 class="h1">Блог о путешествиях</h1>
-<script src="index.js"></script>
+  <header class="header_content">
+    <div class="header_logo">
+      <a href="/">
+        <img src="./assets/icons/logo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="header_navigation">
+      <nav>
+        <a href="/">
+          <span>Главная</span>
+        </a>
+        <a href="#">
+          <span>Экскурсии</span>
+        </a>
+        <a href="#">
+          <span>Личный кабинет</span>
+        </a>
+      </nav>
+      <div class="content">
+        <div class="content-sidebar">
+          <ul class="content-sidebar_list">
+            <li class="content-sidebar_item">
+              <a class="content-sidebar_link content-sidebar_vk" 
+                target="_blank" href="#">
+                <img src="./assets/icons/vk.svg" alt="VK_logo"/>
+              </a>
+            </li>
+            <li class="content-sidebar_item">
+              <a class="content-sidebar_link content-sidebar_inst" 
+                target="_blank" href="#">
+                <img src="./assets/icons/inst.svg" alt="inst_logo"/>
+              </a>
+            </li>
+            <li class="content-sidebar_item">
+              <a class="content-sidebar_link content-sidebar_fb" 
+                target="_blank" href="#">
+                <img src="./assets/icons/facebook.svg" alt="facebook_logo"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="slogo">
+          <span class="travel">ПУТЕШЕСТВУЙ</span>
+          <span class="without">вместе с</span>
+          <span class="company_name">PERO TRAVEL</span>
+          <a class='btn_lazy' href='/excurse'>
+              К экскурсиям 
+              <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+      </div>
+      <div>
+        <img src="assets/img/waterfall.png" alt="водопад">
+      </div>
+      </div>
+    </div>
+  </header>
+  <script src="index.js"></script>
 </body>
 
 </html>
