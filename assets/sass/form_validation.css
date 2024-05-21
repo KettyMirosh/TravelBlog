@@ -1,0 +1,127 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.comment, .contact {
+  width: auto;
+  height: auto;
+}
+
+.contact__content {
+  background-image: url(../img/contact_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 640px;
+  padding: 0 80px;
+}
+.contact__content__form {
+  max-width: 560px;
+  position: absolute;
+  right: 160px;
+  padding: 0 95px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__content__form__title {
+  margin-bottom: 45px;
+}
+.contact__content__form__title .main {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+}
+.contact__content__form__title .other {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffc700;
+  background: 0 0;
+}
+.contact__content__form form {
+  width: 360px;
+}
+.contact__content__form form input {
+  background: 0 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+.contact__content__form form #mail, .contact__content__form form #tel {
+  margin-top: 45px;
+}
+.contact__content__form__btn {
+  margin-top: 60px;
+}
+.contact__content__form__btn button {
+  padding: 15px 62px;
+  background: linear-gradient(92.71deg, #0499dd 0, #17c1bc 100%);
+  border-radius: 60px;
+  border: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.contact__content__form__btn button:hover {
+  background: #17c1bc;
+}
+
+@media (max-width: 20em) {
+  .contact__content__form {
+    padding: 0 0.5em;
+    right: 0.5em;
+  }
+  .contact__content__form form {
+    width: auto;
+  }
+  .contact__content__form .contact__content__btn button {
+    padding: 0.9375em 2.5em;
+  }
+}
+@media (min-width: 20.0625em) and (max-width: 48em) {
+  .contact__content__form {
+    padding: 0 1.25em;
+    right: 2em;
+  }
+  .contact__content__form form {
+    width: auto;
+  }
+  .contact__content__form .contact__content__btn button {
+    padding: 0.9375em 3.125em;
+  }
+}
+@media (min-width: 48.0625em) and (max-width: 64em) {
+  .contact__content__form {
+    padding: 0 2.5em;
+    right: 4em;
+  }
+  .contact__content__form form {
+    width: auto;
+  }
+  .contact__content__form .contact__content__btn button {
+    padding: 0.9375em 3.75em;
+  }
+}/*# sourceMappingURL=form_validation.css.map */

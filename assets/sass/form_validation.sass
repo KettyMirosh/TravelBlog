@@ -1,0 +1,136 @@
+// Основные стили для body и html
+body, html
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  position: relative
+
+// Стили для элементов с классами .comment и .contact
+.comment, .contact
+  width: auto
+  height: auto
+
+// Стили для элементов с классом .contact и его содержимого
+.contact
+  &__content
+    background-image: url(../img/contact_bg.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    height: 640px
+    padding: 0 80px
+
+    // Стили для формы контактов
+    &__form
+      max-width: 560px
+      position: absolute
+      right: 160px
+      padding: 0 95px
+      backdrop-filter: blur(20px)
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      // Стили для заголовка формы
+      &__title
+        margin-bottom: 45px
+
+        // Стили для основного заголовка
+        & .main
+          font-family: "Montserrat"
+          font-style: normal
+          font-weight: 700
+          font-size: 24px
+          line-height: 29px
+          color: #fff
+
+        // Стили для второстепенного заголовка
+        & .other
+          font-family: "Montserrat"
+          font-style: normal
+          font-weight: 500
+          font-size: 14px
+          line-height: 17px
+          color: #ffc700
+          background: 0 0
+
+      // Стили для формы
+      form
+        width: 360px
+
+        input
+          background: 0 0
+          border: 0
+          border-bottom: 1px solid #fff
+          font-family: "Montserrat", sans-serif
+          font-style: normal
+          font-weight: 500
+          font-size: 12px
+          line-height: 15px
+          color: #fff
+
+        #mail, #tel
+          margin-top: 45px
+
+      // Стили для кнопки
+      &__btn
+        margin-top: 60px
+
+        button
+          padding: 15px 62px
+          background: linear-gradient(92.71deg, #0499dd 0, #17c1bc 100%)
+          border-radius: 60px
+          border: 0
+          font-family: "Montserrat"
+          font-style: normal
+          font-weight: 700
+          font-size: 14px
+          line-height: 17px
+          color: #fff
+          cursor: pointer
+          transition: .5s ease all
+
+          &:hover
+            background: #17c1bc
+
+// Медиа-запросы
+@media (max-width: 20em) /*(max-width: 320px)*/
+  .contact
+    &__content
+      &__form
+        padding: 0 0.5em
+        right: 0.5em
+
+      &__form form
+        width: auto
+
+      &__form &__btn button
+        padding: 0.9375em 2.5em
+
+@media (min-width: 20.0625em) and (max-width: 48em) /*(min-width: 321px) and (max-width: 768px)*/
+  .contact
+    &__content
+      &__form
+        padding: 0 1.25em
+        right: 2em
+
+      &__form form
+        width: auto
+
+      &__form &__btn button
+        padding: 0.9375em 3.125em
+
+@media (min-width: 48.0625em) and (max-width: 64em) /*(min-width: 769px) and (max-width: 1024px)*/
+  .contact
+    &__content
+      &__form
+        padding: 0 2.5em
+        right: 4em
+
+      &__form form
+        width: auto
+
+      &__form &__btn button
+        padding: 0.9375em 3.75em

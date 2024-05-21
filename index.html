@@ -1,15 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/style/index.css">
-  <title>Блог о путешествиях</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о путешествиях</title>
+  <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
+
 <body>
-  <header></header>
-  <h1 class="h1">Блог о путешествиях</h1>
-  <main>
+    <header></header>
+  <header class="header_content">
+    <div class="header_logo">
+      <a href="/">
+        <img src="./assets/icons/logo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="header_navigation">
+      <nav>
+        <a href="/">
+          <span>Главная</span>
+        </a>
+        <a href="#">
+          <span>Экскурсии</span>
+        </a>
+        <a href="#">
+          <span>Личный кабинет</span>
+        </a>
+      </nav>
+      <div class="content">
+        <div class="content-sidebar">
+          <ul class="content-sidebar_list">
+            <li class="content-sidebar_item">
+              <a class="content-sidebar_link content-sidebar_vk" 
+                target="_blank" href="#">
+                <img src="./assets/icons/vk.svg" alt="VK_logo"/>
+              </a>
+            </li>
+            <li class="content-sidebar_item">
+              <a class="content-sidebar_link content-sidebar_inst" 
+                target="_blank" href="#">
+                <img src="./assets/icons/inst.svg" alt="inst_logo"/>
+              </a>
+            </li>
+            <li class="content-sidebar_item">
+              <a class="content-sidebar_link content-sidebar_fb" 
+                target="_blank" href="#">
+                <img src="./assets/icons/facebook.svg" alt="facebook_logo"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="slogo">
+          <span class="travel">ПУТЕШЕСТВУЙ</span>
+          <span class="without">вместе с</span>
+          <span class="company_name">PERO TRAVEL</span>
+          <a class='btn_lazy' href='/excurse'>
+              К экскурсиям 
+              <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+      </div>
+      <div>
+        <img src="assets/img/waterfall.png" alt="водопад">
+      </div>
+      </div>
+    </div>
+  </header>
+      <div class="slider-container">
+        <h2 class="slider-h2">Популярные экскурсии</h2>
+        <div class="slider">
+            <div class="slider-line">
+            </div>
+        </div>
+        <div class="slider-arrows">
+            <a class="prev-button prev-button__1">
+                <svg class="arrow-left-3" viewBox="0 0 5 9">
+                    <path
+                        d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                </svg>
+            </a>
+            <div class="next-button next-button__1">
+                <svg class="arrow-right-3" viewBox="0 0 5 9">
+                    <path
+                        d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="reviews slider-container">
+        <h2 class="reviews slider-h2">Отзывы</h2>
+        <div class="slider-2">
+        </div>
+        <div class="slider-arrows">
+            <a class="prev-button prev-button__2">
+                <svg class="arrow-left-3" viewBox="0 0 5 9">
+                    <path
+                        d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+      <main>
     <!-- Блог Дианы todo remove -->
     <h2>Виды экскурсий</h2>
     <div class="main__container_excursion">
@@ -53,6 +146,7 @@
   <div class="container1"></div>
   </main>
 <script src="index.js"></script>
+    <script src="carousel.js"></script>
 </body>
 
 </html>
