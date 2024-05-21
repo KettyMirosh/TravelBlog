@@ -6,68 +6,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блог о путешествиях</title>
-  <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
     <header class="header_content">
-    <div class="header_logo">
-      <a href="/">
-        <img src="./assets/icons/logo.svg" alt="logo">
-      </a>
-    </div>
-    <div class="header_navigation">
-      <nav>
-        <a href="/">
-          <span>Главная</span>
-        </a>
-        <a href="#">
-          <span>Экскурсии</span>
-        </a>
-        <a href="#">
-          <span>Личный кабинет</span>
-        </a>
-      </nav>
-      <div class="content">
-        <div class="content-sidebar">
-          <ul class="content-sidebar_list">
-            <li class="content-sidebar_item">
-              <a class="content-sidebar_link content-sidebar_vk" 
-                target="_blank" href="#">
-                <img src="./assets/icons/vk.svg" alt="VK_logo"/>
-              </a>
-            </li>
-            <li class="content-sidebar_item">
-              <a class="content-sidebar_link content-sidebar_inst" 
-                target="_blank" href="#">
-                <img src="./assets/icons/inst.svg" alt="inst_logo"/>
-              </a>
-            </li>
-            <li class="content-sidebar_item">
-              <a class="content-sidebar_link content-sidebar_fb" 
-                target="_blank" href="#">
-                <img src="./assets/icons/facebook.svg" alt="facebook_logo"/>
-              </a>
-            </li>
-          </ul>
+        <div class="header_logo">
+            <a href="/">
+                <img src="./assets/icons/logo.svg" alt="logo">
+            </a>
         </div>
-        <div class="slogo">
-          <span class="travel">ПУТЕШЕСТВУЙ</span>
-          <span class="without">вместе с</span>
-          <span class="company_name">PERO TRAVEL</span>
-          <a class='btn_lazy' href='/excurse'>
-              К экскурсиям 
-              <i class="fas fa-long-arrow-alt-right"></i>
-          </a>
-      </div>
-      <div>
-        <img src="assets/img/waterfall.png" alt="водопад">
-      </div>
-      </div>
-    </div>
-  </header>
-      <div class="slider-container">
+        <div class="header_navigation">
+            <nav>
+                <a href="/">
+                    <span>Главная</span>
+                </a>
+                <a href="#">
+                    <span>Экскурсии</span>
+                </a>
+                <a href="#">
+                    <span>Личный кабинет</span>
+                </a>
+            </nav>
+            <div class="content">
+                <div class="content-sidebar">
+                    <ul class="content-sidebar_list">
+                        <li class="content-sidebar_item">
+                            <a class="content-sidebar_link content-sidebar_vk" target="_blank" href="#">
+                                <img src="./assets/icons/vk.svg" alt="VK_logo" />
+                            </a>
+                        </li>
+                        <li class="content-sidebar_item">
+                            <a class="content-sidebar_link content-sidebar_inst" target="_blank" href="#">
+                                <img src="./assets/icons/inst.svg" alt="inst_logo" />
+                            </a>
+                        </li>
+                        <li class="content-sidebar_item">
+                            <a class="content-sidebar_link content-sidebar_fb" target="_blank" href="#">
+                                <img src="./assets/icons/facebook.svg" alt="facebook_logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slogo">
+                    <span class="travel">ПУТЕШЕСТВУЙ</span>
+                    <span class="without">вместе с</span>
+                    <span class="company_name">PERO TRAVEL</span>
+                    <a class='btn_lazy' href='/excurse'>
+                        К экскурсиям
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div>
+                    <img src="assets/img/waterfall.png" alt="водопад">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slider-container">
         <h2 class="slider-h2">Популярные экскурсии</h2>
         <div class="slider">
             <div class="slider-line">
@@ -101,6 +98,58 @@
             </a>
         </div>
     </div>
+    <main>
+        <!-- Блог Дианы todo remove -->
+        <h2>Виды экскурсий</h2>
+        <div class="main__container_excursion">
+
+            <div class="main__container_excursion_bus">
+                <img src="src/bus.png">
+                <div class="main__container_excursion_busInfo">
+                    <h3>Автобусный тур</h3>
+                    <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время
+                        одной поездки можно
+                        посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в
+                        разы дешевле
+                        классического экскурсионного тура с ночевками в отелях.</p>
+                </div>
+            </div>
+            <div class="main__container_excursion_car">
+                <img src="src/car.png">
+                <div class="main__container_excursion_carInfo">
+                    <h3>Джиппинг</h3>
+                    <p>Это путешествие на автомобилях высокой проходимости с преодолением естественных препятствий, это
+                        экстремальный вид спорта и отдыха, представляющий собой прохождение туристического маршрута по
+                        бездорожью на автомобилях.</p>
+                </div>
+            </div>
+            <div class="main__container_excursion_ship">
+                <img src="src/ship.png">
+                <div class="main__container_excursion_shipInfo">
+                    <h3>Яхтинг</h3>
+                    <p>Это то же, что круиз на лайнере или прогулка на пароме, только на яхте больше свободы, размеры
+                        судна в разы меньше, нет назойливой команды, можно самостоятельно почувствовать себя капитаном,
+                        постоять за штурвалом. Именно здесь вы почувствуете величайшие просторы Черногор моря..</p>
+                </div>
+            </div>
+            <div class="main__container_excursion_canyon">
+                <img src="src/canyoning.png">
+                <div class="main__container_excursion_canyonInfo">
+                    <h3>Каньонинг</h3>
+                    <p>Это экстремально-спортивный вид отдыха, который заключается в преодолении каньонов (обводненных
+                        или нет) при помощи альпинистского и иного снаряжения, а иногда и вброд, но без лодок или иных
+                        плавсредств.</p>
+                </div>
+            </div>
+            <div class='main__container_excursion_link'>
+                <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей,
+                    просто и быстро!</p>
+                <input type="button" value="К экскурсиям &#8594" class="main__container_excursion_btn">
+            </div>
+        </div>
+        <!-- следующий контейнер отвечает за валюты из апи -->
+        <div class="container1"></div>
+    </main>
     <script src="index.js"></script>
     <script src="carousel.js"></script>
 </body>
