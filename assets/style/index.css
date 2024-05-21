@@ -1,0 +1,25 @@
+.about_us {
+  display: flex;
+}
+
+.about_us_picture {
+  gap: 0px;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 0px;
+  width: 80%;
+  height: auto;
+}
+
+.about_us_total {
+  width: 50%;
+  height: 60%;
+  left: 65%;
+  bottom: 0%;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0px;
+  background: rgb(237, 237, 237);
+  position: absolute;
+}
+
+/*# sourceMappingURL=index.css.map */
