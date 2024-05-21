@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <header class="header_content">
+    <header></header>
+  <header class="header_content">
     <div class="header_logo">
       <a href="/">
         <img src="./assets/icons/logo.svg" alt="logo">
@@ -101,7 +102,50 @@
             </a>
         </div>
     </div>
-    <script src="index.js"></script>
+      <main>
+    <!-- Блог Дианы todo remove -->
+    <h2>Виды экскурсий</h2>
+    <div class="main__container_excursion">
+      
+      <div class="main__container_excursion_bus">
+        <img src="src/bus.png">
+        <div class="main__container_excursion_busInfo">
+        <h3>Автобусный тур</h3>
+        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно
+          посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле
+          классического экскурсионного тура с ночевками в отелях.</p>
+        </div>
+      </div>
+      <div class="main__container_excursion_car">
+        <img src="src/car.png">
+        <div class="main__container_excursion_carInfo">
+        <h3>Джиппинг</h3>
+        <p>Это путешествие на автомобилях высокой проходимости с преодолением естественных препятствий, это экстремальный вид спорта и отдыха, представляющий собой прохождение туристического маршрута по бездорожью на автомобилях.</p>
+      </div>
+      </div>
+      <div class="main__container_excursion_ship">
+        <img src="src/ship.png">
+        <div class="main__container_excursion_shipInfo">
+        <h3>Яхтинг</h3>
+        <p>Это то же, что круиз на лайнере или прогулка на пароме, только на яхте больше свободы, размеры судна в разы меньше, нет назойливой команды, можно самостоятельно почувствовать себя капитаном, постоять за штурвалом. Именно здесь вы почувствуете величайшие просторы Черногор моря..</p>
+      </div>
+      </div>
+      <div class="main__container_excursion_canyon">
+        <img src="src/canyoning.png">
+        <div class="main__container_excursion_canyonInfo">
+        <h3>Каньонинг</h3>
+        <p>Это экстремально-спортивный вид отдыха, который заключается в преодолении каньонов (обводненных или нет) при помощи альпинистского и иного снаряжения, а иногда и вброд, но без лодок или иных плавсредств.</p>
+      </div>
+      </div>
+      <div class='main__container_excursion_link'>
+        <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
+        <input type="button" value="К экскурсиям &#8594" class="main__container_excursion_btn">
+      </div>
+  </div>
+  <!-- следующий контейнер отвечает за валюты из апи -->
+  <div class="container1"></div>
+  </main>
+<script src="index.js"></script>
     <script src="carousel.js"></script>
 </body>
 
