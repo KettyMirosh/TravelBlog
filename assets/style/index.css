@@ -477,5 +477,14 @@ img {
 .arrow-right-3:hover path {
   fill: #0499dd;
 }
+.container1 {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
 
 /*# sourceMappingURL=index.css.map */
